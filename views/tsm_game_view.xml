@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_game_form" model="ir.ui.view">
+            <field name="name">tsm.game.form</field>
+            <field name="model">tsm.game</field>
+            <field name="arch" type="xml">
+                <form string="Partida">
+                    <sheet>
+                        <group col="3">    
+                            <group>
+                                <field name="champ" />
+                                <field name="duration" />
+                                <field name="lane" />
+                            </group>
+                            <group>
+                                <field name="kills" />
+                                <field name="death" />
+                                <field name="assists" />
+                            </group>
+                            <group>
+                                <field name="res_game" />
+                                <field name="enemy" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_game_tree" model="ir.ui.view">
+            <field name="name">tsm.game.tree</field>
+            <field name="model">tsm.game</field>
+            <field name="arch" type="xml">
+                <tree string="Partida">
+                    <field name="champ" />
+                    <field name="enemy" />
+                    <field name="duration" />
+                    <field name="lane" />
+                    <field name="res_game" />
+                    <field name="kills" />
+                    <field name="death" />
+                    <field name="assists" />
+                    <field name="kda" />
+                    <field name="winrate" />
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

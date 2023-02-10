@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="tsm_lane_game_tree" model="ir.ui.view">
+            <field name="name">tsm.lane.game.tree</field>
+            <field name="model">tsm.lane.game</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="lane_game" />
+                    <field name="winrate_lane" />
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

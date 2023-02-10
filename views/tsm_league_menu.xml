@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="league_menu" name="LEAGUE" sequence="5"  web_icon = "tsm_league,static/description/game_icon.png" />
+
+        <record id="champs_action" model="ir.actions.act_window">
+            <field name="name">Champs</field>
+            <field name="res_model">tsm.league.champs</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id="champs_menu" parent="league_menu" action="champs_action" name="Champs" sequence="5"/>
+
+
+        <record id="game_action" model="ir.actions.act_window">
+            <field name="name">Partida</field>
+            <field name="res_model">tsm.game</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id="game_menu" parent="league_menu" action="game_action" name="Partida" sequence="5"/>
+
+
+        <record id="lane_action" model="ir.actions.act_window">
+            <field name="name">Linea</field>
+            <field name="res_model">tsm.lane.game</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id="lane_menu" parent="league_menu" action="lane_action" name="Linea" sequence="5"/>
+
+        <record id="estadistica_action" model="ir.actions.act_window">
+            <field name="name">Linea</field>
+            <field name="res_model">tsm.estadistica</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        
+        <menuitem id="estadistica_menu" parent="league_menu" action="estadistica_action" name="estadistica" sequence="5"/>
+    </data>
+</odoo>

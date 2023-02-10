@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_estadistica_form" model="ir.ui.view">
+            <field name="name">tsm.estadistica.form</field>
+            <field name="model">tsm.estadistica</field>
+            <field name="arch" type="xml">
+                <form string="Model Description">
+                    <header>
+                        <button name="winrate_champs_fun" string="Mejor Winrate Campeones" type="object"/>
+                        <button name="worst_winrate_champs_fun" string="Peor Winrate Campeones" type="object"/>
+                    </header>
+                    <sheet>
+                        <field name="estadistica_line" >
+                            <tree editable ="button">
+                                <field name="champ_enemy"/>
+                                <field name="qty_victory"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_estadistica_tree" model="ir.ui.view">
+            <field name="name">tsm.estadistica.tree</field>
+            <field name="model">tsm.estadistica</field>
+            <field name="arch" type="xml">
+
+                <tree string="x">
+                    <field name="estadistica_line" />
+                </tree>
+            </field>
+        </record>
+
+       
+    </data>
+</odoo>

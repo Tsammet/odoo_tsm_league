@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="tsm_league_champs_form" model="ir.ui.view">
+            <field name="name">tsm.league.champs.form</field>
+            <field name="model">tsm.league.champs</field>
+            <field name="arch" type="xml">
+                <form string="Model Description">
+                    <sheet>
+                        <group col="2">
+                            <group>
+                                <field name="name" />
+                            </group>
+                            <group>
+                                <field name="style" />
+                            </group>
+                        </group>
+                        <group>
+                            <field name="image" widget="image" class="oe_avatar" nolabel="1"
+                                options="{'preview_image': 'image'}" />
+                        </group>
+
+                        <field name="lane">
+                            <tree>
+                                <field name="lane_game" />
+                            </tree>
+                        </field>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="tsm_league_champs_tree" model="ir.ui.view">
+            <field name="name">tsm.league.champs.tree</field>
+            <field name="model">tsm.league.champs</field>
+            <field name="arch" type="xml">
+                <tree string="Model Description">
+                    <field name="name" />
+                    <field name="lane" />
+                    <field name="style" />
+                    <field name="count_play_champ" />
+                    <field name="winrate_champ" />
+                </tree>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tsm_league_champs,access_tsm_league_champs,model_tsm_league_champs,base.group_user,1,1,1,1
+access_tsm_game,access_tsm_game,model_tsm_game,base.group_user,1,1,1,1
+access_tsm_lane_game,access_tsm_lane_game,model_tsm_lane_game,base.group_user,1,1,1,1
+access_tsm_estadistica,access_tsm_estadistica,model_tsm_estadistica,base.group_user,1,1,1,1
+access_tsm_estadistica_line,access_tsm_estadistica_line,model_tsm_estadistica_line,base.group_user,1,1,1,1
